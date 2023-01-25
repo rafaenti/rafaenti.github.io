@@ -1,8 +1,3 @@
-
-
-
-
-
 # Página web de ejemplo de la asignatura de Lenguajes de Marcas (M04UF1)
 
 Además, vamos a aprovechar para hablar de Markdown.
@@ -16,3 +11,11 @@ Aquí almacenaremos la página web estática de la asignatura así como algunos 
 - Un _guión bajo_ singnifica también ITALIC.
 - Para ***BOLD ITALIC*** tres asteriscos.
 - Guión seguido de espacio para hacer un item de lista
+
+## Ejemplos de listas de tareas (tasks)
+
+- [ ] Aprender HTML
+- [ ] Aprender CSS
+- [ ] Aprender Javascript
+- [x] Aprender MySQL
+
