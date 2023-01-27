@@ -8,6 +8,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&family=Ubuntu:ital,wght@0,300;0,700;1,300&display=swap" rel="stylesheet"> 
 
 <link rel="stylesheet" href="base.css" />
+<link rel="stylesheet" href="game.css" />
 
 <script>
 function game (data)
@@ -37,8 +38,13 @@ fetch("https://rafaenti.github.io/game.json").then(response => response.json()).
 <main>
 
 <article>
-<h2>Artículo</h2>
-<p>Ejemplo de contenido</p>
+<h2>Juegaco</h2>
+
+<form>
+<div id="terminal"></div>
+<input type="text" id="commands" />
+<input type="submit" value="Acción" />
+</form>
 </article>
 
 <aside>
