@@ -8,7 +8,7 @@
 			"doors":["principal","salida"]
 		},
 		{
-			"id":"Hall",
+			"id":"hall",
 			"name":"Pasillo de entrada de ENTI",
 			"description":"El pasillo que conecta con las diferentes salas y además tiene un árbol de Navidad un poco pocho.",
 			"items":["piedra","bicicleta"],
