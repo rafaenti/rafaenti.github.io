@@ -27,7 +27,11 @@ function game (data)
 
 function terminal_out (info)
 {
-	document.getElementById("terminal").innerHTML += info;
+	let terminal = document.getElementById("terminal");
+
+	terminal.innerHTML += info;
+
+	terminal.scrollTop = terminal.scrollHeight;
 }
 
 function parseCommand (command)
@@ -36,8 +40,11 @@ function parseCommand (command)
 	switch (command){
 		case "ver":
 			terminal_out("<p>"+game_data.rooms[current_room].description+"</p>");
+			break;
+
+		case "ir":
 			
-			
+
 			break;
 
 		default:
