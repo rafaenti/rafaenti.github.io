@@ -85,7 +85,7 @@ function getDoorNumber (door)
 function parseInstruction (instruction)
 {
 
-	console.log("La instruccióni ", instruction);
+	console.log("La instrucción ", instruction);
 
 	switch (instruction[0]){
 		case "ver":
@@ -99,11 +99,15 @@ function parseInstruction (instruction)
 				return;
 			}
 
+			console.log("Door Num: ",door_num);
+
 			let room_num = getRoomNumber(game_data.doors[door_num].rooms[0]);
 			if (room_num < 0){
 				console.log("Habitación errónea");
 				return;
 			}
+
+			console.log("Room Num: ", room_num);
 
 			if (room_num == current_room){
 				current_room = getRoomNumber(game_data.doors[door_num].rooms[1]);
