@@ -40,7 +40,7 @@ function readAction ()
 {
 	let instruction = document.getElementById("commands").value;
 
-	let data = instruction.split(" ");
+	let data = instruction.trim().split(" ");
 
 	if (data.length == 0){
 		document.getElementById("terminal").innerHTML += "<p><strong>Error</strong>: escribe una instrucción</p>";
