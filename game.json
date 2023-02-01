@@ -6,6 +6,13 @@
 			"description":"El Parking que no puedes usar",
 			"items":["piedra","bicicleta"],
 			"doors":["principal","salida"]
+		},
+		{
+			"id":"Hall",
+			"name":"Pasillo de entrada de ENTI",
+			"description":"El pasillo que conecta con las diferentes salas y además tiene un árbol de Navidad un poco pocho.",
+			"items":["piedra","bicicleta"],
+			"doors":["principal","salida"]
 		}
 	],
 	"items": [
