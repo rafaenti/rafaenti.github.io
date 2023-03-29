@@ -46,3 +46,41 @@ background-color:#A6E6CD;
 #contact-main form p:nth-child(even){
 background-color:#BFEAD9;
 }
+
+
+
+
+#game-page header{
+background-color:red;
+}
+
+#character_list{
+display:flex;
+padding:0;
+margin:0;
+list-style:none;
+}
+
+#character_list button{
+padding:8px;
+border-radius:16px;
+border-bottom-left-radius:0;
+border-bottom-right-radius:0;
+border:0;
+background-color:#ccc;
+}
+
+
+#character_list button:hover{
+background-color:#aaa;
+}
+
+#character_data{
+background-color:#ccc;
+min-height:400px;
+}
+#character_data ul{
+margin:0;
+}
+
+
