@@ -75,3 +75,8 @@ Para añadir una imágen, hemos de dar una descripción y el nombre de la imagen
 ![Meme de Chems 2023 vs 2024](imagen.jpg)
 
 La sintaxis es: exclamación seguido de una descripción dentro de llaves anguladas, seguido de el nombre de la imagen entre paréntesis (sin espacios entre exclamación, llaves anguladas y paréntesis).
+
+
+### Enlaces
+
+Los enlaces son parecidos a las imágenes, la diferencia es que no llevan exclación delante y se pueden introducir dentro de frases [como esta](https://enti.cat).
