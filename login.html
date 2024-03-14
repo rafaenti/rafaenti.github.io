@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Mi fantastica pagina</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Workbench&display=swap" rel="stylesheet">
+	
+	<link rel="stylesheet" href="estilo.css" />
+	
+	<script>
+	/*
+	function saludo () {
+		console.log("ola olita");
+	}
+	
+
+	let nombre = true;
+	
+	console.log("ola k ase "+nombre);
+	
+	for (let i = 0; i < 10; i++){
+		console.log(i);
+	}
+	
+	let pelis = ["Santiago Abascal", "Titanic", "Cars"];
+	
+	pelis.push("Frozen");
+	
+	for (let i = 0; i < pelis.length; i++){
+		console.log(pelis[i]);
+	}
+	
+	saludo();
+	saludo();
+	saludo();
+	*/
+	
+	
+	
+	
+	</script>
+		
+	</head>
+
+	<body>
+		<header>
+			<h1>Web Paula</h1>
+			<nav>
+				<ul>
+					<li><a href="index.html">Portada</a></li>
+					<li><a href="cv.html">CV</a></li>
+					<li><a href="about.html">Sobre mi</a></li>
+					<li><a href="contact.html">Contacto</a></li>
+					<li><a href="login.html">Login</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main id="login_register">
+		
+			<form>
+			<h2>Registrarse</h2>
+				<p><label for="name_form">Nombre: </label><input type="text" name="Nombre" id="name_form" placeholder="Escribe tu nombre"/></p>
+				<p><label for="mail_form">Email: </label><input type="text" name="Email" id="mail_form" placeholder="pacomola@gmail.com"/></p>
+				<p><label for="login_form">Login: </label><input type="text" name="Login" id="login_form" placeholder="Escribe tu usuario"/></p>
+				<p><label for="birth_form"/>Birth: </label><input type="date" name="Birth" id="birth_form"/></p>
+				<p><label for="pass_form"/>Password: </label><input type="password" name="Pass" id="pass_form" placeholder="Escribe tu contraseña"/></p>
+				<p><label for="pass2_form"/>Confirma el password: </label><input type="password" name="Pass_confirmation" id="pass2_form" placeholder="Confirma tu contraseña"/></p>
+				<p><input type="checkbox" name="robot" id="robot_form"/><label for="robot_form"/> ¿Eres un robot? </label></p>
+				<p><input type="submit" value="Registrar" /></p>
+			</form>
+			
+		
+			<form>
+			<h2>Iniciar sesión</h2>
+				<p><label for="mail_login">Email: </label><input type="text" name="Email" id="mail_login" placeholder="pacomola@gmail.com"/></p>
+				<p><label for="pass_login"/>Password: </label><input type="password" name="Pass" id="pass_login" placeholder="Escribe tu contraseña"/></p>
+				<p><input type="checkbox" name="robot" id="robot_login"/><label for="robot_login"/> ¿Eres un robot? </label></p>
+				<p><input type="button" value="Login" id="button_login" /></p>
+				
+				<script>
+				/*function haz_click (){
+					let user = document.getElementById("mail_login");
+					
+					console.log(user.value.length);
+				}
+				
+				let boton = document.getElementById("button_login");
+				
+				boton.addEventListener("click", haz_click);*/
+				
+				let boton = document.getElementById("button_login");
+				
+				boton.addEventListener("click", function(event) { 
+					let user = document.getElementById("mail_login");
+					
+					console.log(user.value.length);
+				} );
+				
+				</script>
+				
+				
+			</form>
+		</main>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Minijuego</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Workbench&display=swap" rel="stylesheet">
+	
+	<link rel="stylesheet" href="estilo.css" />
+
+	</head>
+
+	<body>
+		<header>
+			<h1>Web Paula</h1>
+			<nav>
+				<ul>
+					<li><a href="index.html">Portada</a></li>
+					<li><a href="cv.html">CV</a></li>
+					<li><a href="about.html">Sobre mi</a></li>
+					<li><a href="contact.html">Contacto</a></li>
+					<li><a href="login.html">Login</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+		<form>
+		<h2>Adivina el número</h2>
+		<p>Adivina el número entre 1 y 100</p>
+		<p id="mensaje"><em>Haz click</em></p>
+		<p><label for="numero">Número:</label><input type="number" name="numero" id="numero" /></p>
+		<p><input type="button" value="¡Adivina!" id="adivina" /></p>
+		<script>
+			let numero_random = Math.floor(Math.random()*100) + 1;
+			let adivina = document.getElementById("adivina");
+			adivina.addEventListener("click", function(event){
+				const numero = document.getElementById("numero").value;
+				
+				let mensaje = document.getElementById("mensaje");
+
+				if (numero === ""){
+					console.log("Has de introducir un número!");
+					
+					mensaje.innerHTML = "Has de introducir un número!";
+					
+					return;
+				}
+				
+				if (numero > numero_random){
+					console.log("El número a adivinar es menor");
+					
+					mensaje.innerHTML = "El número a adivinar es menor";
+				}
+				else if (numero < numero_random){
+					console.log("El número a adivinar es mayor");
+					
+					mensaje.innerHTML = "El número a adivinar es mayor";
+				}
+				else{
+					console.log("¡Has ganado!");
+					
+					mensaje.innerHTML = "¡Has ganado!";
+				}
+				
+			});
+		</script>
+		</form>
+		</main>
+	</body>
+</html>
