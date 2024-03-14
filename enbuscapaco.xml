@@ -1,8 +1,0 @@
-<?xml encoding="UTF-8"?>
-<character>
-	<name>Eustaquio</name>
-	<age>80</age>
-	<class>Pollo</class>
-	<CAMPO>VALOR STRING</CAMPO>
-	<CAMPO_INT>33</CAMPO_INT>
-</character>
